@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento Principal</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+    <header id="nav-menu"> 
+        <a href="index.html"><p>Sección 1</p></a>
+        <a href="p2.html"><p>Sección 2</p></a>
+        <a href="p3.html"><p>Sección 3</p></a>
+        <a href="p4.html"><p>Sección 4</p></a>
+        <a href="p5.html"><p>Sección 5</p></a>
+    </header>
+
+    
+    <form id="form" method="POST" action="ws/crearUsuario.php"> 
+
+        <div class="form-camp">
+            <label for="name">Introduce tu Nombre</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-camp">
+            <label for="lastname">Introduce tus Apellidos</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="form-camp">
+            <label for="pass">Introduce tu Password</label>
+            <input type="password" id="pass" name="password" required>
+        </div>
+
+        <div class="form-camp">
+            <label for="number">Introduce tu Teléfono</label>
+            <input type="tel" id="number" name="number" required>
+        </div>
+
+        <div class="form-camp">
+            <label for="email">Introduce tu Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>    
+
+        <div id="gender-option" class="form-camp">
+            <label for="male">Masculino:</label>
+            <input type="radio" id="male" name="gender" value="masculino" required>
+            <label for="female">Femenino:</label>
+            <input type="radio" id="female" name="gender" value="femenino" required>
+        </div>
+
+
+        <input class="form-camp" id="submit" type="submit">
+
+    </form>
+
+</body>
+</html>

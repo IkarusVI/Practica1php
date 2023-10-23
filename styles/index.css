@@ -1,0 +1,70 @@
+#form{
+    margin-top: 10vh;
+    border-radius: 10px;
+    padding: 20px 50px 20px 50px;
+    min-width: 400px;
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 1.2em;
+    
+
+    background: rgba(12, 12, 12, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1.5px solid rgba(0, 255, 217, 0.478);
+
+}
+
+#form .form-camp{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form .form-camp label{
+   align-self: self-start;
+   color: rgba(255, 255, 255, 0.915);
+}
+
+#form .form-camp input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(158, 238, 38, 0);
+    background-color: transparent;
+    padding: 5px;
+    color: rgba(158, 238, 38, 0.773);
+    font-size: 1em;
+    text-align: left;
+    transition: all 0.3s;
+   
+}
+#form .form-camp input:focus{
+    border-bottom: 2px solid rgb(158, 238, 38);
+}
+
+#form #gender-option{
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    padding-bottom: 15px;
+}
+#form #gender-option input{
+    width: fit-content;
+}
+
+#form #submit{
+    border: none;
+    background-color: rgba(28, 226, 127, 0.651);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+#form #submit:hover{
+    background-color: rgba(22, 178, 100, 0.512);
+}
